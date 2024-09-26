@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internship Application Form</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      h1 {
+        color: #4a90e2;
+        margin-bottom: 20px;
+      }
+
+      #applicationForm {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+        color: #333;
+      }
+
+      input[type="email"],
+      input[type="password"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+      }
+
+      input[type="email"]:focus,
+      input[type="password"]:focus,
+      textarea:focus,
+      select:focus {
+        border-color: #4a90e2;
+        box-shadow: 0 0 8px rgba(74, 144, 226, 0.2);
+        outline: none;
+      }
+
+      button {
+        background-color: #4a90e2;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #357abd;
+      }
+
+      button:active {
+        background-color: #2a65a5;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      .checkbox-group {
+        text-align: left;
+        max-height: 200px;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+
+      .checkbox-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Internship Application Form</h1>
+      <form id="applicationForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea
+          id="coverLetter"
+          name="coverLetter"
+          rows="10"
+          required
+        ></textarea>
+
+        <label for="categories">Categories:</label>
+        <div id="categories" class="checkbox-group">
+          <label
+            ><input type="checkbox" name="categories" value="Business/MBA" />
+            Business/MBA</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="CAD Design" /> CAD
+            Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Campus Ambassador"
+            />
+            Campus Ambassador</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Chartered Accountancy (CA)"
+            />
+            Chartered Accountancy (CA)</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Chemistry" />
+            Chemistry</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Civil Engineering"
+            />
+            Civil Engineering</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Client Servicing"
+            />
+            Client Servicing</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Cloud Computing" />
+            Cloud Computing</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Commerce" />
+            Commerce</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Company Secretary (CS)"
+            />
+            Company Secretary (CS)</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Computer Science"
+            />
+            Computer Science</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Computer Vision" />
+            Computer Vision</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Content Writing" />
+            Content Writing</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Copywriting" />
+            Copywriting</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Creative Design" />
+            Creative Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Creative Writing"
+            />
+            Creative Writing</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Customer Service"
+            />
+            Customer Service</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Cyber Security" />
+            Cyber Security</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Data Entry" /> Data
+            Entry</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Data Science" />
+            Data Science</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Database Building"
+            />
+            Database Building</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Design" />
+            Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Dietetics/Nutrition"
+            />
+            Dietetics/Nutrition</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Digital Marketing"
+            />
+            Digital Marketing</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="E-commerce" />
+            E-commerce</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Editorial" />
+            Editorial</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Electric Vehicle"
+            />
+            Electric Vehicle</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Electrical Engineering"
+            />
+            Electrical Engineering</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Electronics Engineering"
+            />
+            Electronics Engineering</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Embedded Systems"
+            />
+            Embedded Systems</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Engineering" />
+            Engineering</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Engineering Design"
+            />
+            Engineering Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Engineering Physics"
+            />
+            Engineering Physics</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Environmental Sciences"
+            />
+            Environmental Sciences</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Event Management"
+            />
+            Event Management</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Facebook Marketing"
+            />
+            Facebook Marketing</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Fashion Design" />
+            Fashion Design</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Film Making" />
+            Film Making</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Finance" />
+            Finance</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Flutter Development"
+            />
+            Flutter Development</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Front End Development"
+            />
+            Front End Development</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Full Stack Development"
+            />
+            Full Stack Development</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Fundraising" />
+            Fundraising</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Game Design" />
+            Game Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Game Development"
+            />
+            Game Development</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="General Management"
+            />
+            General Management</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Government" />
+            Government</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Graphic Design" />
+            Graphic Design</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Hospitality" />
+            Hospitality</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Hotel Management"
+            />
+            Hotel Management</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Human Resources (HR)"
+            />
+            Human Resources (HR)</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Humanities" />
+            Humanities</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Illustration" />
+            Illustration</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Industrial Design"
+            />
+            Industrial Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Information Technology"
+            />
+            Information Technology</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Instrumentation" />
+            Instrumentation</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Interior Design" />
+            Interior Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Internet of Things (IoT)"
+            />
+            Internet of Things (IoT)</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="iOS App Development"
+            />
+            iOS App Development</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Journalism" />
+            Journalism</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Law" /> Law</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Logistics" />
+            Logistics</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Machine Learning"
+            />
+            Machine Learning</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Manufacturing Design"
+            />
+            Manufacturing Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Market/Business Research"
+            />
+            Market/Business Research</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Marketing" />
+            Marketing</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Material Science"
+            />
+            Material Science</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Mechanical Engineering"
+            />
+            Mechanical Engineering</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Media" />
+            Media</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Medical" />
+            Medical</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Mobile App Development"
+            />
+            Mobile App Development</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Motion Graphics" />
+            Motion Graphics</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Networking" />
+            Networking</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Operations" />
+            Operations</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Photography" />
+            Photography</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Physics" />
+            Physics</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Production" />
+            Production</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Programming" />
+            Programming</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Project Management"
+            />
+            Project Management</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Public Relations"
+            />
+            Public Relations</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Quality Assurance"
+            />
+            Quality Assurance</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Renewable Energy"
+            />
+            Renewable Energy</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Research and Development (R&D)"
+            />
+            Research and Development (R&D)</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Robotics" />
+            Robotics</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Sales" />
+            Sales</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Science" />
+            Science</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Social Media Marketing"
+            />
+            Social Media Marketing</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Software Development"
+            />
+            Software Development</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Software Testing"
+            />
+            Software Testing</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Sound Engineering"
+            />
+            Sound Engineering</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Space Science" />
+            Space Science</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Statistics" />
+            Statistics</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Strategy Consulting"
+            />
+            Strategy Consulting</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Supply Chain Management"
+            />
+            Supply Chain Management</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="System Design" />
+            System Design</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Technical Writing"
+            />
+            Technical Writing</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Telecommunication"
+            />
+            Telecommunication</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="UI/UX Design" />
+            UI/UX Design</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Video Editing" />
+            Video Editing</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Videography" />
+            Videography</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="categories"
+              value="Virtual Reality (VR)"
+            />
+            Virtual Reality (VR)</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Web Development" />
+            Web Development</label
+          >
+          <label
+            ><input type="checkbox" name="categories" value="Writing" />
+            Writing</label
+          >
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("applicationForm")
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
+
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+          const coverLetter = document.getElementById("coverLetter").value;
+
+          const selectedOptions = Array.from(
+            document.querySelectorAll('input[name="categories"]:checked')
+          ).map((checkbox) => checkbox.value);
+
+          if (selectedOptions.length > 2) {
+            alert("You can select up to 2 categories only.");
+            return;
+          }
+
+          try {
+            const response = await fetch("/apply", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email,
+                password,
+                coverLetter,
+                categories: selectedOptions,
+              }),
+            });
+
+            const result = await response.json();
+            alert(result.message);
+          } catch (error) {
+            console.error("Error:", error);
+          }
+        });
+
+      document
+        .getElementById("categories")
+        .addEventListener("change", function () {
+          const selectedCheckboxes = Array.from(
+            document.querySelectorAll('input[name="categories"]:checked')
+          );
+          if (selectedCheckboxes.length > 2) {
+            alert("You can select up to 2 categories only.");
+            selectedCheckboxes[selectedCheckboxes.length - 1].checked = false;
+          }
+        });
+    </script>
+  </body>
+</html>
